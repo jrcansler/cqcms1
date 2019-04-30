@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+{% extends "base.html" %}
+{% load staticfiles %}
+
+
+{% block body_block %}
+
+<div id="J11" class="jumbotron jumbotron-fluid" style="background-image: url({% static "pics/025.jpg" %})">
+  <div class="container">
+    <h1 class="display-4">Contact Us</h1>
+    <p class="lead">Management Soutions, Inc.</p>
+  </div>
+</div>
+
+<br>
+<h2 id="h2contact"><strong>We look forward to speaking with you!</strong></h2>
+<br>
+<p id="contact1"><strong>Candace Cansler</strong></p>
+<p id="contact">Founder, CEO</p>
+<p id="contact">Phone: (828) 446-2223</p>
+<p id="contact">E-Mail: candacecansler@gmail.com</p>
+<p id="contact">Location: Hickory, NC</p>
+<br>
+<br>
+<h2 id="h2contact"><strong>Leave us a message and we will get back to you!</strong></h2>
+<br>
+
+
+<form id="form" enctype="multipart/form-data" action="" method="POST">
+  {% csrf_token %}
+
+    <div class="form-group">
+        <div class="col-lg-6 col-xs-12">
+      <div class="col">
+        <label for="firstname">Name:</label>
+        <input name="firstname" type="text" class="form-control" placeholder="First name" required="True">
+      </div>
+    </div>
+    <div class="col-lg-6 col-xs-12">
+    <div class="form-group">
+    <label for="company">Organization:</label>
+    <input name="company" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Organization" required="True">
+    </div>
+    </div>
+    </div>
+      <div class="col-lg-6 col-xs-12">
+    <div class="form-group">
+      <label for="email">Email address:</label>
+      <input name="email "type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required="True">
+    </div>
+    </div>
+
+    <div class="col-lg-6 col-xs-12">
+        <div class="form-group">
+          <label for="email2">Verify Email address:</label>
+          <input name="email2 "type="email2" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required="True">
+        </div>
+      </div>
+    <div class="col-lg-12 col-xs-12">
+        <div class="form-group">
+          <label for="comment">Please Contact Us!</label>
+          <textarea name="comment" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="" required="True"></textarea>
+        </div>
+    </div>
+    <button id="button" class="btn btn-primary" type="submit">Submit</button>
+</form>
+
+
+
+
+
+{% endblock %}

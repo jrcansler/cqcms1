@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+{% extends "base.html" %}
+{% load staticfiles %}
+
+
+{% block body_block %}
+
+<div id="J11" class="jumbotron jumbotron-fluid" style="background-image: url({% static "pics/bgabout.jpg" %})">
+  <div class="container">
+    <h1 class="display-4">Who We Are</h1>
+    <p class="lead">Management Soutions, Inc.</p>
+  </div>
+</div>
+
+<br>
+<h2 id="h2index"><strong>About Us</strong></h2>
+<p id="form">Management Solutions Inc. has been providing professional support
+  services to non-profit associations and societies across the state since 1994.
+  Dedication to our clients, attention to detail, client satisfaction and always
+  delivering on schedule has served us well in maintaining our long term relationships
+   with the clients we serve.  We believe that our success is based on the
+   success of our clients.  </p>
+
+<h2 id="h2index"><strong>The Team</strong></h2>
+
+<div id="serivce" class="col-lg-6 col-xs-12">
+  <br>
+  <br>
+  <img class="center" id="pic" src="{% static "pics/cansler.jpg" %}" alt="Image not found" width="350" height="400">
+
+</div>
+
+<div id="serivce" class="col-lg-6 col-xs-12">
+  <br>
+  <br>
+  <h3 id="form">Candace Cansler</h3>
+  <h3 id="form">Founder and CEO</h3>
+  <br>
+  <p id="form">Candace Cansler, the founder and CEO of Management Solutions has twenty-five plus years of
+    experience in association management.  Candace founded Management Solutions when a past employer asked
+     her to manage a national start up association in 1992.  Candace enthusiastically took on the challenge
+     and all of these years later she is still managing that same start up alongside an array of other clients.</p>
+     <br>
+    <p id="form">
+    Since that first client, Candace has enjoyed serving as Executive Director to many state and national
+    organizations.  Candace has planned and executed hundreds of events and has managed all aspects of
+    event planning for association clients.  Management Solutions has been successful by providing the
+    highest level of client services and delivering what we promise.<br>
+    <br>
+    Our success is based on the success of our clients.</p>
+
+</div>
+
+<br>
+<br>
+<br>
+
+
+{% endblock %}

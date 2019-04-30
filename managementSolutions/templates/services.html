@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+{% extends "base.html" %}
+{% load staticfiles %}
+
+
+{% block body_block %}
+<div id="J11" class="jumbotron jumbotron-fluid" style="background-image: url({% static "pics/024.jpg" %})">
+  <div class="container">
+    <h1 class="display-4">What We Do</h1>
+    <p class="lead">Management Soutions, Inc.</p>
+  </div>
+</div>
+
+<br>
+<h3 id="form">This is only an overview of the services we offer.  We provide many custom solutions for any assoication
+and would be happy tp speak with you personally about your needs.<br>
+<br>
+<a href="{% url 'contact' %}">Contact us</a> for more information.
+</h3>
+<br>
+  <div id="serivce" class="col-lg-6 col-xs-12">
+    <h2 id="h2service"><strong>Administrative Coordination</strong></h2>
+        <ul id="list">
+          <li>Assist in day-to-day operations </li>
+          <li>Maintain client files and record keeping</li>
+          <li>Coordinate annual tax filings, reviews and audits</li>
+          <li>Partner with the leadership in implementing strategic plans</li>
+          <li>Provide support to association leaders</li>
+        </ul>
+
+    <h2 id="h2service"><strong>Membership Services</strong></h2>
+      <ul id="list">
+        <li>Membership database management</li>
+        <li>Handle membership dues and invoicing</li>
+        <li>Respond to inquiries by pottential new memebers</li>
+      </ul>
+
+      <h2 id="h2service"><strong>Conference and Meeting Planning</strong></h2>
+        <ul id="list">
+          <li>Coordinate site selection and negotiate meeting space contracts</li>
+          <li>Manage exhibit space and coordinate with sponsors</li>
+          <li>Secure speaker contracts and coordinate speaker needs</li>
+          <li>Provide onsite management including registration</li>
+        </ul>
+
+    </div>
+
+
+    <div id="serivce" class="col-lg-6 col-xs-12">
+      <h2 id="h2service"><strong>Executive Committee Services</strong></h2>
+          <ul id="list">
+            <li>Secure Sites for Executive Committee meetings </li>
+            <li>Provide support services and equipment for committee meetings </li>
+            <li>Preparation of meeting notices, agenda and member reports</li>
+            <li>Prepare and maintain official minutes of committee meetings</li>
+            <li>Coordinate conference calls, video setup and announcements</li>
+          </ul>
+
+      <h2 id="h2service"><strong>Financial Management</strong></h2>
+        <ul id="list">
+          <li>Assist in the development of the annual budget</li>
+          <li>Provide monthly financials, and deposits of all income sources</li>
+          <li>Prepare checks or online payments for Treasurers approval</li>
+        </ul>
+
+
+        <h2 id="h2service"><strong>Communications/Website</strong></h2>
+          <ul id="list">
+            <li>Coordinate publication of all association materials</li>
+            <li>Social media management, and content review</li>
+            <li>Maintain website content and manage any outside contractors</li>
+            <li>Assist in preparation and distribution of press releases</li>
+          </ul>
+      </div>
+
+<br>
+<br>
+
+
+{% endblock %}

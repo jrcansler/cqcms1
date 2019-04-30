@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+{% extends "base.html" %}
+{% load staticfiles %}
+
+
+{% block body_block %}
+
+  <div id="J1" class="jumbotron" style="background-image: url({% static "pics/bluegreen.jpg" %})" >
+      <br>
+      <h1 id="J2" class="display-4"><i>Candace Cansler's</i></h1>
+      <h1 id="J1" class="display-4"><i>Management Solutions</i></h1>
+      <br>
+      <br>
+      <p><i>Serving the association industry for over 25 years...</i></p>
+      <br>
+        <a id="J11" class="btn btn-primary btn-lg" href="https://www.linkedin.com/in/candace-cansler-892378105/" role="button">Linkedin</a>
+  </div>
+<br>
+<br>
+  <div id="row" class="row">
+    <div class="col-lg-6 col-xs-12">
+      <h2 id="h2index"><strong>Who We Are</strong></h2>
+      <p>Management Solutions Inc. has been providing professional support
+        services to non-profit associations and societies across the state since 1994.
+        Dedication to our clients, attention to detail, client satisfaction and always
+        delivering on schedule has served us well in maintaining our long term relationships
+         with the clients we serve.  We believe that our success is based on the
+         success of our clients.  <br>
+        <a href="{% url 'about' %}">Learn More</a>
+      </p>
+  </div>
+
+  <div id="row" class="row">
+    <div class="col-lg-6 col-xs-12">
+      <h2 id="h2index"><strong>Our Services</strong></h2>
+      <p>Our company prides itself in being able to tailor our services and consulting
+        to a wide variety of clients.    We provide professional management expertise,
+        financial management, membership services, administrative coordination, meeting
+        planning and much more.  We do not believe that “one shoe fits all”, so contact us
+        and see what we can do for you. <br>
+        <a href="{% url 'services' %}">Learn More</a>
+      </p>
+  </div>
+
+
+
+{% endblock %}
